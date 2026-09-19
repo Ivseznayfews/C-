@@ -1,0 +1,14 @@
+# 默认：让 Git 自动判断文本文件并统一为 LF
+* text=auto
+
+# 明确指定文本文件类型（推荐对你项目里的 md 也加上）
+*.md   text eol=lf
+*.txt  text eol=lf
+*.json text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+
+# 二进制文件不转换
+*.png binary
+*.jpg binary
+*.pdf binary
