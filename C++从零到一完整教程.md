@@ -580,6 +580,7 @@ int main() {
 3. 在 `math_utils.cpp` 和 `main.cpp` 里 `#include "math_utils.h"` —— **Visual Studio 自动把项目目录加入了搜索路径**，不用配置 `-I`
 
 **第 26 章的 `#include "mylib/calculator.h"` 这种带子目录的写法**，在 VS 里需要把 `include` 目录加入搜索路径：
+
 - 项目属性 → `C/C++` → `常规` → **附加包含目录** → 填 `$(ProjectDir)include`
 
 但**新手建议先用平铺的文件结构**（所有 `.h` 和 `.cpp` 放一起，用 `#include "math_utils.h"`），等熟悉了再搞目录结构。
